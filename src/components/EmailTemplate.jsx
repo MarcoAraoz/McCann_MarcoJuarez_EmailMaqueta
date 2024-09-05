@@ -16,25 +16,25 @@ const EmailTemplate = ({ nombre }) => {
       </div>
 
       <div className="pb-0 text-gray-800 mx-16 my-4">
-        <h2 className="text-lg font-semibold italic text-gray-600 mb-4">{nombre}</h2>
-        <p className="mb-4 italic">
+        <h2 className="text-xl font-semibold italic text-gray-600 mb-4">{nombre}</h2>
+        <p className="mb-4 italic text-lg text-gray-600">
           Creamos la familia <strong className='text-gray-600'>Chevrolet Sonic®</strong> para presentar por dentro y por fuera, tu estilo de vida.
           Cualquiera de nuestras versiones cuenta con el espacio adecuado, un diseño audaz y juvenil 
           caracterizado por líneas definidas, parrilla de doble puerto y faros expuestos, haciendo 
           imposible no capturar todas las miradas cuando vas a bordo de él.
           <br />
           <br />
-          <strong className='text-gray-600 italic'>Además, diviértete mientras liberas el poder de su motor a donde sea que vayas sin perder
+          <strong className='text-gray-600 italic text-lg'>Además, diviértete mientras liberas el poder de su motor a donde sea que vayas sin perder
           la conectividad a la que estás acostumbrado, haciendo que tu experiencia de manejo
           sea inigualable.</strong> 
         </p>
       </div>
 
-      <div className="w-full flex justify-center items-center mb-8 pt-0">
-  <a href="http://www.chevrolet.com.mx/" target="_blank" rel="noopener noreferrer">
-    <img src={action} alt="Pie de página" className="w-auto" />
-  </a>
-</div>
+      <div className="w-full flex justify-center items-center mt-10 mb-8 pt-0">
+        <a href="http://www.chevrolet.com.mx/" target="_blank" rel="noopener noreferrer">
+          <img src={action} alt="Pie de página" className="w-auto" /> 
+        </a>
+      </div>
       <div className="w-full">
         <img src={footer} alt="Pie de página" className="w-full" />
       </div>

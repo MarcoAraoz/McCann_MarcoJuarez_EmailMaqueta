@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import header from '../assets/images/1.jpg';
 import footer from '../assets/images/2.jpg';
 import action from '../assets/images/31.png';
@@ -9,7 +10,7 @@ import GoogleIcon from '../assets/images/google+.jpg';
 
 const EmailTemplate = ({ nombre }) => {
   return (
-    <div className="max-w-xl mx-auto bg-stone-200 shadow-md rounded-sm mt-6">
+    <div className="max-w-3xl mx-auto bg-stone-200 shadow-md rounded-sm mt-6">
       <div className="w-full">
         <img src={header} alt="Encabezado" className="w-full h-auto" />
       </div>
@@ -45,13 +46,13 @@ const EmailTemplate = ({ nombre }) => {
             </a>
         </h2>
     <h2 className="text-4xl font-thin italic mb-4 text-amber-500">/</h2>
-        <h2 className="text-base font-bold mb-4 text-gray-700">
+        <h2 className="text-base font-bold mb-3 text-gray-700">
             <a href="http://www.chevrolet.com.mx/" target='_blank' className="text-gray-700 hover:underline">
                 chevrolet.mx
             </a>
         </h2>
     <h2 className="text-4xl font-thin italic m-0 mb-4 text-amber-500">/</h2>
-    <h2 className="text-xs font-medium text-center italic mb-2 mr-4 text-gray-700">SíGUENOS EN</h2>
+    <h2 className="text-xs font-medium text-center italic mb-2 mr-4 text-gray-700">SÍGUENOS EN</h2>
         <a href="https://www.facebook.com/chevroletmexico?ref=ts&fref=ts" target="_blank" rel="noopener noreferrer">
           <img src={FacebookIcon} alt="Facebook" className="w-11 h-auto mb-4 rounded-full" />
         </a>

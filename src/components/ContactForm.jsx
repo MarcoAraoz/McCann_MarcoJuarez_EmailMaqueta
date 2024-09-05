@@ -67,7 +67,7 @@ const ContactForm = () => {
   };
 
   return (
-  <form onSubmit={handleSubmit} className="max-w-xl mx-auto bg-stone-200 shadow-md rounded-sm mt-6">
+  <form onSubmit={handleSubmit} className="max-w-3xl mx-auto bg-stone-200 shadow-md rounded-sm mt-6">
     <div className='text-center'>
       <img src={banner} alt="banner" className="w-full h-auto mb-6" />
     </div>

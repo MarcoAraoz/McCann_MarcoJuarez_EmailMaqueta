@@ -61,4 +61,7 @@ Para ejecutar este proyecto localmente, asegúrate de tener instalados:
 Accede al formulario de contacto en la ruta principal (http://localhost:3000/).
 Envía la información del formulario, la cual se almacenará en la base de datos.
 
-## Navega a la ruta /email-template para ver la maqueta del email renderizada.
+### Navega a la ruta /email-template para ver la maqueta del email renderizada.
+
+# Base de datos
+![Alt Text](./src/assets/db_storage.jpeg)

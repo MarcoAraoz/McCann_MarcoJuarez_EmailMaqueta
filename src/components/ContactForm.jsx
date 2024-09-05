@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import banner  from '../assets/images/1.jpg';
-import bubble  from '../assets/images/31.png';
-import footer  from '../assets/images/2.jpg';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({

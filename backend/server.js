@@ -6,7 +6,7 @@ import bodyParser from 'body-parser';
 const { Pool } = pkg;
 
 const app = express();
-const port = 3001; // Puedes cambiar el puerto si es necesario
+const port = 3001;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -14,10 +14,10 @@ app.use(bodyParser.json());
 // Configuración de la conexión a la base de datos PostgreSQL
 const pool = new Pool({
   host: 'localhost',
-  user: 'postgres', // Cambia a tu usuario de PostgreSQL
-  password: 'marcoa', // Cambia a tu contraseña de PostgreSQL
-  database: 'emailMKT', // Nombre de tu base de datos
-  port: 5432, // Puerto de PostgreSQL, el valor por defecto es 5432
+  user: 'postgres',
+  password: 'marcoa',
+  database: 'emailMKT',
+  port: 5432,
 });
 
 pool.connect((err) => {

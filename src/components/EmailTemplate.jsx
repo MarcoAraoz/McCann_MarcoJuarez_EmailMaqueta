@@ -14,7 +14,7 @@ const EmailTemplate = ({ nombre }) => {
         <img src={header} alt="Encabezado" className="w-full h-auto" />
       </div>
 
-      <div className="pb-0 text-gray-800 mx-10 my-4">
+      <div className="pb-0 text-gray-800 mx-16 my-4">
         <h2 className="text-lg font-semibold italic text-gray-600 mb-4">{nombre}</h2>
         <p className="mb-4 italic">
           Creamos la familia <strong className='text-gray-600'>Chevrolet Sonic®</strong> para presentar por dentro y por fuera, tu estilo de vida.

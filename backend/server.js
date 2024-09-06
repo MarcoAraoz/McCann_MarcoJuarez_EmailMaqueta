@@ -8,7 +8,14 @@ const { Pool } = pkg;
 const app = express();
 const port = 3001;
 
-app.use(cors());
+const corsOptions = {
+  origin: 'https://maquetado-email-marco-juarez.netlify.app', // Tu dominio de Netlify
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
+
+// app.use(cors());
 app.use(bodyParser.json());
 
 // Configuración de la conexión a la base de datos PostgreSQL

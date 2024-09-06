@@ -8,14 +8,14 @@ const { Pool } = pkg;
 const app = express();
 const port = 3001;
 
-const corsOptions = {
-  origin: 'https://maquetado-email-marco-juarez.netlify.app', // Tu dominio de Netlify
-  optionsSuccessStatus: 200
-};
+// const corsOptions = {
+//   origin: 'https://maquetado-email-marco-juarez.netlify.app', // Tu dominio de Netlify
+//   optionsSuccessStatus: 200
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
-// app.use(cors());
+app.use(cors());
 app.use(bodyParser.json());
 
 const pool = new Pool({
@@ -36,7 +36,7 @@ pool.connect((err) => {
 });
 
 // Ruta para manejar el almacenamiento de datos del formulario
-app.post('localhost:3001/registers', (req, res) => {
+app.post('/registers', (req, res) => {
   const { name, phone_number, email } = req.body;
   const sql = 'INSERT INTO registers (name, phone_number, email) VALUES ($1, $2, $3)';
   pool.query(sql, [name, phone_number, email], (err, result) => {
@@ -51,5 +51,5 @@ app.post('localhost:3001/registers', (req, res) => {
 
 
 app.listen(port, () => {
-  console.log(`Servidor ejecutándose en http://localhost:${port}`);
+  console.log(`Servidor corriendo en el puerto ${port}`);
 });

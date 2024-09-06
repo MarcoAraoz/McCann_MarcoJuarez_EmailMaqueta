@@ -46,7 +46,8 @@ const ContactForm = () => {
     e.preventDefault();
     if (validate()) {
       try {
-        const response = await fetch('/registers', {  // Cambiar localhost por la IP pública
+        // const response = await fetch('/registers', {  // Cambiar localhost por la IP pública
+        const response = await fetch('http://localhost:3001/registers', {  // Cambiar localhost por la IP pública
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

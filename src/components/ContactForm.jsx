@@ -46,7 +46,7 @@ const ContactForm = () => {
     e.preventDefault();
     if (validate()) {
       try {
-        const response = await fetch('https://maquetado-email-marco-juarez.netlify.app/registers', {
+        const response = await fetch('http://18.205.103.247:3001/registers', {  // Cambiar localhost por la IP pública
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ const ContactForm = () => {
       }
     }
   };
-
+  
   return (
   <form onSubmit={handleSubmit} className="max-w-3xl mx-auto bg-stone-200 shadow-md rounded-sm mt-6">
     <div className='text-center'>

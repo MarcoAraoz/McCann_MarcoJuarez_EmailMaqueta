@@ -36,7 +36,7 @@ pool.connect((err) => {
 });
 
 // Ruta para manejar el almacenamiento de datos del formulario
-app.post('/registers', (req, res) => {
+app.post('localhost:3001/registers', (req, res) => {
   const { name, phone_number, email } = req.body;
   const sql = 'INSERT INTO registers (name, phone_number, email) VALUES ($1, $2, $3)';
   pool.query(sql, [name, phone_number, email], (err, result) => {

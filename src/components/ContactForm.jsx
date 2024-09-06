@@ -46,7 +46,7 @@ const ContactForm = () => {
     e.preventDefault();
     if (validate()) {
       try {
-        const response = await fetch('http://18.205.103.247:3001/registers', {
+        const response = await fetch('https://maquetado-email-marco-juarez.netlify.app/registers', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

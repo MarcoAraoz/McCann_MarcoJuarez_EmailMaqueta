@@ -18,15 +18,6 @@ app.use(cors(corsOptions));
 // app.use(cors());
 app.use(bodyParser.json());
 
-// Configuración de la conexión a la base de datos PostgreSQL
-// const pool = new Pool({
-//   host: 'localhost',
-//   user: 'postgres',
-//   password: 'marcoa',
-//   database: 'emailMKT',
-//   port: 5432,
-// });
-
 const pool = new Pool({
   host: '18.205.103.247',  // IP pública de la instancia EC2
   user: 'postgres',
